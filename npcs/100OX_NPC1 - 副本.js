@@ -1,0 +1,1 @@
+player.gainItem(1712006,128)

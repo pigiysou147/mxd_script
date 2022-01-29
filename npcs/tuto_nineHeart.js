@@ -1,0 +1,1 @@
+player.runScript("金币副本入口")

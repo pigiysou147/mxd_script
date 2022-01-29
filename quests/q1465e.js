@@ -1,0 +1,10 @@
+npc.sayNext("现在你已经做好获得新力量的准备啦…好了，请把激活的神秘石交给我吧。我会使用它，唤醒你潜在的力量。\r\n\r\n#b(如果点击确认，即可完成5次转职)");
+player.loseItem(2435734);
+player.loseItem(2435735);
+player.loseItem(2435736);
+player.gainItem(2435770, 1);
+player.gainItem(2435902, 1);
+player.showTopScreenEffect("Effect/5skill.img/screen", 0);
+map.soundEffect("Sound/SoundEff.img/5thJobd");
+player.showAvatarOriented("Effect/5skill.img/character_delayed");
+npc.completeQuest();  		

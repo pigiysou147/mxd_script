@@ -1,0 +1,1 @@
+player.runScript("一元购");

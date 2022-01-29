@@ -1,0 +1,2 @@
+
+player.runScript("cdk");

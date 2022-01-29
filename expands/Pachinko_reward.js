@@ -1,0 +1,3 @@
+
+
+player.openPachinko(true);

@@ -1,0 +1,122 @@
+/*  This is mada by Yanran    
+ *
+ *  [拉克兰]梦与幻想之都 - 开始
+ *
+ *  @Author Yanran
+ */
+
+player.setInGameCurNodeEventEnd(true);
+//player.setStandAloneMode(true);
+player.setInGameDirectionMode(true, false, false, false);
+player.useItemEffect(2022863);//移动药水，保证角色移动速度
+//player.setLayerBlind(true, 255, 0);
+player.setLayerOn(0, "11", 0, 0, -1, "Map/Effect2.img/BlackOut", 4, true, -1, false, 0, 0);
+//player.setForcedInput(0);
+////npc.setDelay(30);
+player.setInGameCurNodeEventEnd(true);
+player.setLayerOn(2000, "0", 0, -80, -1, "Map/Effect3.img/Lacheln/1", 4, true, -1, false, 0, 0);
+player.setLayerOn(2000, "1", 0, -80, -1, "Map/Effect3.img/Lacheln/2", 4, true, -1, false, 0, 0);
+player.changeBGM("Bgm46/ClockTowerofNightmare");
+////npc.setDelay(2000);
+player.playExclSoundWithDownBGM("Voice3.img/Lucid/Q1/0");
+npc.sayNextENoEsc("#face1#你有没有试过在无法摆脱的梦境中不断挣扎？", 3003250); //0 常规 1失落 2愤怒 4疯狂
+player.playExclSoundWithDownBGM("Voice3.img/Lucid/Q1/1");
+npc.sayNextENoEsc("#face1#即使知道是梦，却无法挣脱，那种无力感。\r\n\r\n你有没有感受过？", 3003250);
+player.playExclSoundWithDownBGM("Voice3.img/Lucid/Q1/2");
+npc.sayNextENoEsc("#face1#当我划破无尽的黑暗，来到这个世界时，我突然明白了。", 3003250);
+player.playExclSoundWithDownBGM("Voice3.img/Lucid/Q1/3");
+player.soundEffect("Sound/SoundEff.img/ArcaneRiver/foot0");
+npc.sayNextENoEsc("#face1#那个懦弱的我已经不复存在。", 3003250);
+player.setLayerOff(300, "1");
+player.setLayerOn(1500, "2", 0, -80, -1, "Map/Effect3.img/Lacheln/3", 4, true, -1, false, 0, 0);
+////npc.setDelay(2000);
+player.setLayerOff(200, "2");
+player.setLayerOff(200, "0");
+//npc.setOverlapDetail(0, 200, 200, true);
+////npc.setDelay(200);
+//player.setLayerBlind(false, 255, 0);
+npc.setCameraZoom(0, 2000, 2000, 525, 51);
+//npc.removeOverlapDetail(1500);
+player.spawnTempNpc(3003245, 585, 51);
+player.setNpcSpecialAction(3003245, "summon", 0, false);
+player.spawnTempNpc(3003249, 686, 51);
+player.setNpcSpecialAction(3003249, "summon", 0, false);
+player.setLayerOff(300, "11");
+////npc.setDelay(1000);
+npc.sayNextENoEsc("#face1#饶…饶命……", 3003245);
+player.soundEffect("Sound/SoundEff.img/ArcaneRiver/wind");
+////npc.setDelay(100);
+player.showNpcEffectPlay(3003245, "Map/Effect3.img/Lacheln/pung", 900, 0, -20, true, 0, false, 0);
+//npc.setOverlapDetail(0, 200, 200, true);
+////npc.setDelay(900);
+//npc.removeOverlapDetail(2000);
+player.showNpcEffectPlay(3003245, "Map/Effect3.img/Lacheln/smallB", 900, 0, 0, false, 0, false, 0);
+player.setNpcSpecialAction(3003245, "remove", 9999999, true);
+////npc.setDelay(900);
+player.showNpcEffectPlay(3003245, "Map/Effect3.img/Lacheln/pung2", 900, 0, -20, true, 0, false, 0);
+////npc.setDelay(900);
+//player.destroyTempNpc(3003245);		
+//////npc.setDelay(3500);
+npc.sayNextENoEsc("#face3#还…还有一个…", 3003249);
+//player.setForcedInput(1);
+////npc.setDelay(2800);
+//player.setForcedInput(0);
+npc.sayNextENoEsc("你究竟是谁？", true);
+player.playExclSoundWithDownBGM("Voice3.img/Lucid/Q1/4");
+npc.sayNextENoEsc("#face6#欢迎你。这里是没有悲伤痛苦，只有梦想和幻想的城市拉克兰。", 3003250);
+npc.sayNextENoEsc("#face6#好了，希望你能有个好梦。", 3003250);
+player.soundEffect("Sound/SoundEff.img/ArcaneRiver/wind");
+player.showPlayerEffectPlay("Map/Effect3.img/Lacheln/pung", 0, 0, -30, true, 0, false, 0);
+////npc.setDelay(200);
+player.showPlayerEffectPlay("Effect/OnUserEff.img/emotion/oh", 1500, 0, 5, true, 0, false, 0);
+player.showNpcEffectPlay(3003250, "Effect/OnUserEff.img/emotion/oh", 900, 0, 0, false, 0, false, 0);
+//player.showNpcEffectPlay(3003249, "Effect/OnUserEff.img/emotion/oh", 900, 0, 0, false, 0, false, 0);
+////npc.setDelay(3000);
+npc.sayNextENoEsc("什么事情都没发生……没有像刚才那个人一样变成蝴蝶？", true);
+npc.sayNextENoEsc("#face5#哇！天啊！你是？来了位可爱的客人啊。", 3003250);
+player.soundEffect("Sound/SoundEff.img/windowcrash1");
+////npc.setDelay(200);
+player.setLayerBlind(true, 255, 300);
+////npc.setDelay(1000);
+npc.sayNextENoEsc("#face0#天啊？谁把我的灯弄坏了？", 3003250);
+npc.sayNextENoEsc("#face0#快逃跑！", 3003251);
+player.soundEffect("Sound/SoundEff.img/windowcrash1");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot0");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot2");
+////npc.setDelay(300);
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot2");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot3");
+////npc.setDelay(30);
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot3");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot0");
+////npc.setDelay(100);
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot2");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot0");
+////npc.setDelay(200);
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot3");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot2");
+////npc.setDelay(50);
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot0");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot3");
+////npc.setDelay(300);
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot0");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot3");
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/foot2");
+////npc.setDelay(1000);
+npc.sayNextENoEsc("#face1#该死该死……", 3003250);
+npc.sayNextENoEsc("#face6#让他跑了。", 3003250);
+npc.sayNextENoEsc("#face3#请…请发发慈悲……", 3003249);
+player.playSoundWithMuteBGM("SoundEff.img/ArcaneRiver/wind");
+player.showNpcEffectPlay(3003249, "Map/Effect3.img/Lacheln/pung", 900, 0, -120, true, 0, false, 0);
+////npc.setDelay(1000);
+player.playSoundWithMuteBGM("Mob.img/8643000/Die"); //怪物死亡的叫声
+player.destroyTempNpc(3003249);
+////npc.setDelay(2000);
+//npc.setOverlapDetail(0, 200, 200, true);
+player.setInGameCurNodeEventEnd(true);
+////npc.setDelay(1);
+player.cancelItemEffect(2022863);
+player.changeMap(450003100, 0)
+//player.setStandAloneMode(false);
+player.setInGameDirectionMode(false, false, false, false);
+//npc.removeOverlapDetail(2000);

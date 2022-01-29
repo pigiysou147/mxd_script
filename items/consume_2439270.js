@@ -1,0 +1,1 @@
+player.runScript("联盟神器")

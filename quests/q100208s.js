@@ -1,0 +1,4 @@
+
+
+npc.completeQuest();
+

@@ -1,0 +1,1 @@
+player.runScript("系統查ban")

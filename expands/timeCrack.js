@@ -1,0 +1,27 @@
+/*
+ * AuroMS MapleStory server emulator written in Java
+ * Copyright (C) 2018 Kent
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/* global npc, player, map */
+
+
+
+let sel = npc.askMenuS("#e<时间裂缝>#n\r\n过去和未来，以及中间的某个地方……你想去哪里呢？\r\n#b#L0#过去的神木村#l\r\n#L1#次元裂缝#l");
+if (sel == 0) {
+        player.changeMap(272000100, 0);
+} else {
+        player.changeMap(272020000, 0);
+}

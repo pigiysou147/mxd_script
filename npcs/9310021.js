@@ -1,0 +1,3 @@
+﻿
+
+player.runScript("rank");
